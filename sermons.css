@@ -1,0 +1,62 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.sermon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sermon {
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #4a90e2;
+    border-right: 6px solid #4a90e2;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fdfdfd;
+}
+
+.sermon h3 {
+    margin: 0 0 10px;
+    color: #1a202c;
+}
+
+.sermon p {
+    margin: 4px 0;
+    color: #555;
+}
+
+.download-btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-color: #4A90E2;
+}
+
+.download-btn:hover {
+    background-color: #333333;
+}

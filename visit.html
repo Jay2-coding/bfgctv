@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a session</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="visit.css">
+    <link rel="icon" href="jay.png">
+</head>
+<body>
+    <marquee>
+        <p style="color: blue">Welcome to Bible Foundation Gospel Church. Book a Session with our Pastor.</p>
+    </marquee>
+    <p align="center">Book a Session with our Pastor.</p>
+    <section>
+        <form action="/action_page.php" method="get">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="bfgchurch@gmail.com" required><br><br>
+            <label for="birthday">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Choose a time:</label>
+            <input type="time">
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" value="+234" placeholder="906 772 0240" maxlength="14" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option id="male">Male</option>
+                <option id="female">Female</option>
+                <option id="neither not to say">Neither not to say</option>
+            </select><br><br>
+            <label for="prayer">Prayer Point:</label>
+            <input type="text" id="prayer" name="prayer" placeholder="Do you have any prayer point?">
+            <input type="submit" value="Book"><br><br>
+        </form>
+    </section>
+</body>
+</html>

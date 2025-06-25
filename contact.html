@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta description="">
+        <meta keywords="">
+        <link rel="icon" href="bfgc.png">
+        <title>Bible Foundation Gospel Church</title>
+        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="head&foot.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+         <header class="navbar">
+        <div class="jay-cont">
+            <div class="logo">
+                <a href="index.html"><img src="bfgc.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="workers.html">Worker's Application Form</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-wrapper">
+    <section class="contact-header">
+        <h1>Get in Touch with Us</h1>
+        <p>We are here to answer your questions and hear your prayer requests.</p>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> No. 26a Ijebu Road by court road, Sabon Gari, Kano</p>
+            <p><strong>Email:</strong> <a href="mailto:info@bfgc.org">info@bfgc.org</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+2349067720240">+234-906-772-0240</a></p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <form action="contact_process.php" method="POST" class="contact-form" novalidate>
+            <h2>Send Us a Message</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+    <section class="contact-map">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=No.+26a+Ijebu+Road+by+court+road,+Sabon+Gari,+Kano&output=embed"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+</main>
+
+       <footer class="bfgc-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+            <h4>QUICK LINKS</h4>
+            <ul class="footer-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+                <li><a href="sermons.html"><i class="fas fa-play-circle"></i> Sermons</a></li>
+                <li><a href="workers.html"><i class="fas fa-user-check"></i> Worker's Form</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>SOCIAL LINKS</h4>
+            <ul class="footer-links">
+                <li><a href="https://www.facebook.com/biblefoundation.gospelchurch" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://youtube.com/@biblefoundationgospelchurch?si=5Nr_rWnO5C6BxaI7" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://chat.whatsapp.com/DgWErXyaokSCsl4xh4feTe" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                <li><a href="https://www.x.com/@BFGC_HQ" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>CONTACT</h4>
+            <p>BIBLE FOUNDATION GOSPEL CHURCH</p>
+            <p class="tagline">...The church of heaven bound...</p>
+            <p><strong>Address:</strong> No. 26a Ijebu Road by court road, Sabon Gari, Kano</p>
+            <p><strong>Email:</strong> info@bfgc.org</p>
+            <p><strong>Phone:</strong> +234-906-772-0240</p>
+        </div>
+    </div>
+    <div class="foot-new">
+        <p style="text-align: center">© 2026 Bible Foundation Gospel Church. All Rights reserved</p>
+    </div>
+    </footer>
+    <script src="all.js"></script>
+    </body>
+</html>

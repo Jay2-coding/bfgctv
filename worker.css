@@ -1,0 +1,82 @@
+        .work {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            margin-top: 30px;
+            margin-buttom: 30px;
+            border-color: rgb(193, 220, 245);
+        }
+
+        .form1 {
+            background: #ffffff;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0003;
+        }
+
+        .form1 h4 {
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .form1 label {
+            display: inline-block;
+            width: 40%;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+            vertical-align: top;
+        }
+
+        .form1 input[type="text"],
+        .form1 input[type="email"],
+        .form1 input[type="date"],
+        .form1 input[type="tel"],
+        .form1 select,
+        .form1 textarea {
+            width: 95%;
+            padding: 6px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .form1 input[type="radio"],
+        .form1 input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .form1 ul {
+            list-style: lower-roman;
+            padding-left: 50px;
+        }
+
+        .form1 ul li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .form1 input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+.form1 input[type="submit"]:hover {
+            background: #357ABD;
+        }

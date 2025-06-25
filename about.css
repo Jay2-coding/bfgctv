@@ -1,0 +1,136 @@
+.about-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 8px;
+    color: #005a87;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 400px;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    color: #005a87;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-history, .about-values, .about-leadership {
+    margin-bottom: 50px;
+}
+
+.about-history h2,
+.about-values h2,
+.about-leadership h2 {
+    font-family: 'Playfair Display', serif;
+    color: #005a87;
+    margin-bottom: 15px;
+}
+
+.about-history p,
+.about-values ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-values ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-values li {
+    margin-bottom: 10px;
+}
+
+.leaders {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leader-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.leader-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.leader-card h3 {
+    margin: 0 0 6px 0;
+    font-family: 'Playfair Display', serif;
+    color: #005a87;
+}
+
+.leader-card p {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .about-intro {
+        flex-direction: column;
+    }
+    .about-image, .about-text {
+        flex: 1 1 100%;
+    }
+    .leaders {
+        flex-direction: column;
+        align-items: center;
+    }
+}

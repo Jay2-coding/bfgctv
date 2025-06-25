@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="bfgc.png">
+    <title>WORKER'S FORM</title>
+    <link rel="stylesheet" href="worker.css" />
+    <link rel="stylesheet" href="head&foot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+        <header class="navbar">
+        <div class="jay-cont">
+            <div class="logo">
+                <a href="index.html"><img src="bfgc.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="workers.html">Worker's Application Form</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="work">
+        <h1>WORKER'S APPLICATION FORM</h1>
+    </div>
+    <div class="form1">
+        <h4>Please read and meditate on <b>LUKE 14:28</b> before you complete and fill out this form</h4>
+        <form action="work.php" method="POST">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="mname">Middle Name:</label>
+                <input type="text" id="mname" name="mname"><br><br>
+
+                <label for="sname">Surname:</label>
+                <input type="text" id="sname" name="sname" required><br><br>
+
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" required></textarea><br><br>
+
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
+
+                <label>Marital Status:</label><br>
+                <input type="radio" id="single" name="marital-status" value="Single" required>
+                <label for="single">Single</label><br>
+                <input type="radio" id="married" name="marital-status" value="Married">
+                <label for="married">Married</label><br>
+                <input type="radio" id="divorced" name="marital-status" value="Divorced">
+                <label for="divorced">Divorced</label><br>
+                <input type="radio" id="widowed" name="marital-status" value="Widowed">
+                <label for="widowed">Widowed</label><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label><br><br>
+
+                <label for="profession">Profession/Work:</label>
+                <input type="text" id="profession" name="profession" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Details of Christian Life</b></legend>
+
+                <label>Are you Born Again?</label><br>
+                <input type="radio" id="yes-born-again" name="born-again" value="yes" required>
+                <label for="yes-born-again">Yes</label><br>
+                <input type="radio" id="no-born-again" name="born-again" value="no">
+                <label for="no-born-again">No</label><br><br>
+
+                <div id="born-again-question" style="display: none">
+                    <label for="salvation-date">If yes, Date of Salvation:</label>
+                    <input type="date" id="salvation-date" name="salvation-date"><br><br>
+
+                    <label for="how-know">How do you know?</label>
+                    <input type="text" id="how-know" name="how-know"><br><br>
+                </div>
+
+                <label>Have you been baptized by immersion?</label><br>
+                <input type="radio" id="yes-baptized" name="baptized" value="yes" required>
+                <label for="yes-baptized">Yes</label><br>
+                <input type="radio" id="no-baptized" name="baptized" value="no">
+                <label for="no-baptized">No</label><br><br>
+
+                <div id="baptized-question" style="display: none">
+                    <label for="baptism-date">If yes, Date of Baptism:</label>
+                    <input type="date" id="baptism-date" name="baptism-date"><br><br>
+                </div>
+
+                <label>Are you filled with the Holy Spirit?</label><br>
+                <input type="radio" id="yes-spirit" name="spirit" value="yes" required>
+                <label for="yes-spirit">Yes</label><br>
+                <input type="radio" id="no-spirit" name="spirit" value="no">
+                <label for="no-spirit">No</label><br><br>
+
+                <div id="spirit-question" style="display: none">
+                    <label for="how-spirit">How do you know?</label>
+                    <input type="text" id="how-spirit" name="how-spirit"><br><br>
+                </div>
+
+                <label>Do you have any spiritual gifts?</label><br>
+                <input type="radio" id="yes-gift" name="gift" value="yes" required>
+                <label for="yes-gift">Yes</label><br>
+                <input type="radio" id="no-gift" name="gift" value="no">
+                <label for="no-gift">No</label><br><br>
+
+                <div id="gift-question" style="display: none">
+                    <label for="gift-list">If yes, kindly state:</label>
+                    <input type="text" id="gift-list" name="gift-list"><br><br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Details of Service</b></legend>
+
+                <label for="old-ministry">How long have you been in this ministry?</label>
+                <input type="text" id="old-ministry" name="old-ministry" required><br><br>
+
+                <label>Which department do you wish to serve in (max 2)?</label><br>
+                <input type="checkbox" id="ushering" name="department[]" value="Ushering">
+                <label for="ushering">Ushering & Protocol</label><br>
+
+                <input type="checkbox" id="sod" name="department[]" value="School of Discipleship">
+                <label for="sod">School of Discipleship</label><br>
+
+                <input type="checkbox" id="children-tutors" name="department[]" value="Children Tutors">
+                <label for="children-tutors">Children Tutors</label><br>
+
+                <input type="checkbox" id="choir" name="department[]" value="Choir Department">
+                <label for="choir">Choir Department</label><br>
+
+                <input type="checkbox" id="evangelism" name="department[]" value="Evangelism">
+                <label for="evangelism">Evangelism</label><br>
+
+                <input type="checkbox" id="sanctuary" name="department[]" value="Sanctuary Cleaner">
+                <label for="sanctuary">Sanctuary Cleaner</label><br>
+
+                <input type="checkbox" id="media" name="department[]" value="Media & Decoration">
+                <label for="media">Media & Decoration</label><br>
+
+                <input type="checkbox" id="drama" name="department[]" value="Drama">
+                <label for="drama">Drama</label><br><br>
+
+                <label for="serve">Why do you want to serve in the selected department(s)?</label><br>
+                <textarea id="serve" name="serve" required></textarea><br><br>
+
+                <p>To be a worker requires the following:</p>
+                <ul>
+                    <li>Dedication to assigned duties.</li>
+                    <li>Consistent attendance to church services.</li>
+                    <li>Respect for authority.</li>
+                    <li>Discipline in all areas of life.</li>
+                </ul>
+                <label>Are you willing to commit to these requirements?</label><br>
+                <input type="radio" id="yes-commit" name="commit" value="yes" required>
+                <label for="yes-commit">Yes</label>
+                <input type="radio" id="no-commit" name="commit" value="no">
+                <label for="no-commit">No</label><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit Form"><br><br>
+        </form>
+    </div>
+        <footer class="bfgc-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+            <h4>QUICK LINKS</h4>
+            <ul class="footer-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+                <li><a href="sermons.html"><i class="fas fa-play-circle"></i> Sermons</a></li>
+                <li><a href="workers.html"><i class="fas fa-user-check"></i> Worker's Form</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>SOCIAL LINKS</h4>
+            <ul class="footer-links">
+                <li><a href="https://www.facebook.com/biblefoundation.gospelchurch" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://youtube.com/@biblefoundationgospelchurch?si=5Nr_rWnO5C6BxaI7" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://chat.whatsapp.com/DgWErXyaokSCsl4xh4feTe" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                <li><a href="https://www.x.com/@BFGC_HQ" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>CONTACT</h4>
+            <p>BIBLE FOUNDATION GOSPEL CHURCH</p>
+            <p class="tagline">...The church of heaven bound...</p>
+            <p><strong>Address:</strong> No. 26a Ijebu Road by court road, Sabon Gari, Kano</p>
+            <p><strong>Email:</strong> info@bfgc.org</p>
+            <p><strong>Phone:</strong> +234-906-772-0240</p>
+        </div>
+    </div>
+    <div class="foot-new">
+        <p style="text-align: center">© 2026 Bible Foundation Gospel Church. All Rights reserved</p>
+    </div>
+    </footer>
+
+    <script src="work.js"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>
